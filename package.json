@@ -1,6 +1,16 @@
 {
+  "name": "social-media-posts",
+  "version": "1.0.0",
+  "description": "Code examples related to my social media posts.",
+  "scripts": {
+    "start": "ts-node src/script-runner.ts"
+  },  
   "dependencies": {
     "reflect-metadata": "^0.1.13",
     "typescript-ioc": "^3.2.2"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2"
   }
 }
