@@ -6,5 +6,6 @@ const files = fs.readdirSync(path.join(__dirname)).filter(file => file.endsWith(
 
 // Execute each .ts file
 files.forEach(file => {
+    console.log(`<${file}>`)
   require(path.join(__dirname, file));
 });
