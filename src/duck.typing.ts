@@ -33,7 +33,7 @@ const employeeData: Employee = { name: "Bob", age: 25, employeeId: "12345" };
 printPersonInfo(employeeData); // Output: Name: Bob, Age: 25
 
 // Use the printPersonInfo function with personData
-printPersonInfo(employeeData); // Output: Name: Alice, Age: 30
+printPersonInfo(personData); // Output: Name: Alice, Age: 30
 
 // Use the printEmployeeInfo function with personData
 // This won't work, why ? think :)
