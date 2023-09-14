@@ -29,11 +29,14 @@ const personData: Person = { name: "Alice", age: 30 };
 // Create an Employee object
 const employeeData: Employee = { name: "Bob", age: 25, employeeId: "12345" };
 
+// Use the printPersonInfo function with personData
+printPersonInfo(personData); // Output: Name: Alice, Age: 30
+
 // Use the printPersonInfo function with employeeData
 printPersonInfo(employeeData); // Output: Name: Bob, Age: 25
 
-// Use the printPersonInfo function with personData
-printPersonInfo(personData); // Output: Name: Alice, Age: 30
+// Use the printEmployeeInfo function with employeeData
+printEmployeeInfo(employeeData); // Output: Name: Alice, Age: 30, Employee ID: 12345
 
 // Use the printEmployeeInfo function with personData
 // This won't work, why ? think :)
