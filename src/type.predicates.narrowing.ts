@@ -14,13 +14,13 @@ type ProductEntity = Entity & {
 };
 
 // A function that checks if an object is a UserEntity
-function isUserEntity(obj: any): obj is UserEntity {
-  return 'username' in obj;
+function isUserEntity(entity: Entity): entity is UserEntity {
+  return 'username' in entity;
 }
 
 // A function that checks if an object is a ProductEntity
-function isProductEntity(obj: any): obj is ProductEntity {
-  return 'productName' in obj && 'price' in obj;
+function isProductEntity(entity: Entity): entity is ProductEntity {
+  return 'productName' in entity && 'price' in entity;
 }
 
 // Example objects
