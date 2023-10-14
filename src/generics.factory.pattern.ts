@@ -1,15 +1,18 @@
+type Role = 'Designer' | 'Engineer' | 'Manager';
+type Department = 'Games' | 'Platform' | 'Studio';
+
 // Define an interface for employee details
 interface EmployeeDetails {
   name: string;
-  role: 'Designer' | 'Engineer' | 'Manager';
-  department: 'Games' | 'Platform' | 'Studio';
+  role: Role;
+  department: Department;
 }
 
 // Create a base class for employees
 class Employee {
   protected readonly name: string;
-  protected readonly role: string;
-  protected readonly department: string;
+  protected readonly role: Role;
+  protected readonly department: Department;
 
   constructor(details: EmployeeDetails) {
     this.name = details.name;
