@@ -1,15 +1,15 @@
-type Role = 'Designer' | 'Engineer' | 'Manager';
-type Department = 'Games' | 'Platform' | 'Studio';
+export type Role = 'Designer' | 'Engineer' | 'Manager';
+export type Department = 'Games' | 'Platform' | 'Studio';
 
 // Define an interface for employee details
-interface EmployeeDetails {
+export interface EmployeeDetails {
   name: string;
   role: Role;
   department: Department;
 }
 
 // Create a base class for employees
-class Employee {
+export class Employee {
   protected readonly name: string;
   protected readonly role: Role;
   protected readonly department: Department;
@@ -26,7 +26,7 @@ class Employee {
 }
 
 // Create a class for Managers
-class Manager extends Employee {
+export class Manager extends Employee {
   constructor(details: EmployeeDetails) {
     super(details);
   }
