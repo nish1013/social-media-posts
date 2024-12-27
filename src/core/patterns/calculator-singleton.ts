@@ -27,18 +27,20 @@ const calculatorSingleton = (function () {
   }
 
   // Public API
-  return {
-    add(amount: number): number {
-      if (_validate(amount)) {
-        _total += amount;
-      } else {
-        _print(`Invalid amount: ${amount}`);
-      }
+  function add(amount: number): number {
+    if (_validate(amount)) {
+      _total += amount;
+    } else {
+      _print(`Invalid amount: ${amount}`);
+    }
 
-      _print(_total.toString());
-      return _total;
-    },
-  };
+    _print(_total.toString());
+    return _total;
+  }
+
+  return Object.freeze({
+    add,
+  });
 })();
 
 export default calculatorSingleton;
